@@ -25,4 +25,4 @@ jobs:
           npm ci
           touch .env
           echo "${{ secrets.PROD_ENV_FILE }}" > .env
-          pm2 restart BackendAPI || pm2 start index.js --name BackendAPI
+          pm2 restart BackendAPI
