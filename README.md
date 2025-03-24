@@ -1,8 +1,8 @@
 # Sales Admin Panel API Documentation
-```sh
+
 
 ## 1. Project Information
-- Project is live on AWS with a CI/CD pipeline implemented using GitHub Actions.
+- `Project is live on AWS with a CI/CD pipeline implemented using GitHub Actions.`
 - Live URL: 
 
 
@@ -19,17 +19,16 @@
 
 
 ## 3. Database Information
-- Database Used: PostgreSQL
-- Hosted on Neon (Free-Tier), so API responses may have latency. Please be patient while accessing the APIs.
-- For faster API responses, you may use a local PostgreSQL database.
-- Run PostgreSQL Locally Using Docker:  docker run --name postgres_container -e POSTGRES_DB=sales_admin -e POSTGRES_USER=root -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
+- `Database Used: PostgreSQL`
+- `Hosted on Neon (Free-Tier), so API responses may have latency. Please be patient while accessing the APIs.`
+- `For faster API responses, you may use a local PostgreSQL database.`
+- `Run PostgreSQL Locally Using Docker:  docker run --name postgres_container -e POSTGRES_DB=sales_admin -e POSTGRES_USER=root -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres`
 
 
 
 ## 4. NOTE:
-- The endpoint and their responses provided given below are **not** just example data but actual, tested responses from the live API using POSTMAN. 
-- All data is stored in a **PostgreSQL database hosted on Neon**, and you can verify the results by making API requests yourself.  
-
+- `The endpoint and their responses provided given below are **not** just example data but actual, tested responses from the live API using POSTMAN. `
+- `All data is stored in a **PostgreSQL database hosted on Neon**, and you can verify the results by making API requests yourself.`
 
 
 

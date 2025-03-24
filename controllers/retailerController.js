@@ -74,8 +74,6 @@ const getRetailersLinkedWithOneWholesaler = async (req, res) => {
             ],
         });
 
-
-        // filter retailers associated with one wholesalers
         const filteredRetailers = retailers.filter(
             (retailer) => Array.isArray(retailer.wholesalers) && retailer.wholesalers.length === 1
         );

@@ -81,7 +81,7 @@ const getWholesalerWithRetailers = async (req, res) => {
         const wholesaler = await Wholesaler.findByPk(wholesaler_id, {
             include: {
                 model: Retailer,
-                through: { attributes: [] }, // ✅ Hide the junction table fields
+                through: { attributes: [] }, 
             }
         });
 
@@ -103,13 +103,11 @@ const getMonthlyTurnover = async (req, res) => {
     try {
         console.log('Req reached -----------------------');
         const { year, wholesaler_id } = req.query;
-
-        // Validate Inputs
+        
         if (!year || !wholesaler_id) {
             return res.status(400).json({ message: "Both year and wholesaler_id are required." });
         }
 
-        // Query Database
         const turnoverData = await Stock.findAll({
             attributes: [
                 [Sequelize.fn("DATE_TRUNC", "month", Sequelize.col("date")), "month"],
@@ -151,7 +149,7 @@ const getMaxTurnoverFromSingleRetailer = async (req, res) => {
             return res.status(400).json({ message: "wholesaler_id is required in the query params" });
         }
 
-        console.log("Received wholesaler_id:", wholesaler_id); 
+        // console.log("Received wholesaler_id:", wholesaler_id); 
 
         const maxTurnover = await Stock.findOne({
             attributes: [

@@ -12,7 +12,6 @@ Retailer.belongsToMany(Wholesaler, { through: "WholesalerRetailer" });
 Wholesaler.hasMany(Stock, { foreignKey: "wholesaler_id" });
 Retailer.hasMany(Stock, { foreignKey: "retailer_id" });
 
-// Reverse Associations
 Stock.belongsTo(Wholesaler, { foreignKey: "wholesaler_id" });
 Stock.belongsTo(Retailer, { foreignKey: "retailer_id" });
 
