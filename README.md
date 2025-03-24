@@ -9,14 +9,12 @@
 
 ## 2. Quick LIVE Test - GET Routes  
 - Below are some working live URL's where you can check these API's.
-|------------------------|
-| Endpoint | Description |
-|----------|-------------|
-1. `http://3.233.252.224/api/retailers/getAllRetailers`                       -->  Fetch all retailers 
-2. `http://3.233.252.224/api/retailers/single-wholesaler`                     -->  Get retailers associated with exactly one wholesaler 
-3. `http://3.233.252.224/api/wholesalers/1`                                   -->  Get a wholesaler along with their associated retailers 
-4. `http://3.233.252.224/api/wholesalers/turnover?year=2025&wholesaler_id=1`  -->  Get monthly turnover for a wholesaler in a given year 
-5. `http://3.233.252.224/api/wholesalers/max-turnover?wholesaler_id=2`        -->  Get the maximum turnover of a wholesaler from a single retailer 
+- EndPoints: 
+1. http://3.233.252.224/api/retailers/getAllRetailers                       -->  Fetch all retailers 
+2. http://3.233.252.224/api/retailers/single-wholesaler                     -->  Get retailers associated with exactly one wholesaler 
+3. http://3.233.252.224/api/wholesalers/1                                   -->  Get a wholesaler along with their associated retailers 
+4. http://3.233.252.224/api/wholesalers/turnover?year=2025&wholesaler_id=1  -->  Get monthly turnover for a wholesaler in a given year 
+5. http://3.233.252.224/api/wholesalers/max-turnover?wholesaler_id=2        -->  Get the maximum turnover of a wholesaler from a single retailer 
 
 - Remaining POST routes can be test using POSTMAN. 
 - Below i've explained all the routes.
